@@ -3,6 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather API</title>
+    <title>Temperature Proximity</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <body>
+    <main class="app">
+      <section class="card">
+        <h1>Ideal weather checker</h1>
+        <p class="subtext">
+          Closer to my ideal temperature means greener. Farther means redder.
+        </p>
+
+        <form id="weather-form" class="weather-form">
+          <label for="location">Location</label>
+          <input id="location" type="text" placeholder="Enter city (ex: Miami)" required />
+          <button type="submit">Check Temperature</button>
+        </form>
+
+        <section id="info" class="info" aria-live="polite">
+          Enter a location to load weather.
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
